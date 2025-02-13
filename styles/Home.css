@@ -1,0 +1,25 @@
+/* Category buttons styling */
+button.btn-outline-primary {
+  transition: 0.3s ease-in-out;
+}
+
+button.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Card styling */
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+}
+
+/* Align text for "No articles found" */
+.text-center {
+  text-align: center;
+}
