@@ -1,0 +1,140 @@
+.navbar {
+  background-color: #f7f7f7;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  font-family: Inter, sans-serif;
+  height: 65px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 20px;
+  font-family: Inter, sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.category-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.category-list li {
+  margin-right: 20px;
+}
+
+.category-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  font-family: Inter, sans-serif;
+}
+
+.add-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.add-button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #e5e5e5;
+  color: #666;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+.hamburger-button {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 10px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #f7f7f7;
+  border-right: 1px solid #ddd;
+  transition: left 0.3s ease;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar-close-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-list li {
+  margin-bottom: 10px;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  font-family: Inter, sans-serif;
+}
+
+.sidebar-add-link {
+    text-decoration: none;
+    color: #666;
+    font-size: 12px;
+    font-family: Inter, sans-serif;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .hamburger-button {
+    display: block !important;
+  }
+  .category-list {
+    display: none !important;
+  }
+  .add-buttons {
+    display: none;
+  }
+}
